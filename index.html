@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مهام المجلس</title>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
    <div>
     <h1>ادارةالمهام</h1>
-<input type="text" id="inputTask" >
-<button type="button">اضافة مهمة</button>
+<input type="text" id="taskInput" placeholder="ادخل مهمة جديدة">
+<button type="button" onclick="addTask()">اضافة مهمة</button>
+<ul id="taskList"></ul>
    </div>
 </body>
 </html>
