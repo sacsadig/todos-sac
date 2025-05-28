@@ -35,22 +35,14 @@ touch index.html script.js
     <title>قائمة المهام</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="bg-white p-6 rounded shadow w-full max-w-md">
-      <h1 class="text-2xl font-bold mb-4">قائمة المهام</h1>
-      <input
-        id="taskInput"
-        class="w-full border p-2 mb-2"
-        placeholder="أدخل مهمة جديدة..."
-      />
-      <button
-        onclick="addTask()"
-        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-      >
-        إضافة
-      </button>
-      <ul id="taskList" class="mt-4 list-disc pl-5"></ul>
-    </div>
+    <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+   <div class="bg-white p-6 rounded shadow w-full max-w-md">
+        <h1 class="text-2xl font-bold text-blue-500 mb-4 text-center">إدارة المهام</h1>
+        <input class="w-full border p-2 mb-4 rounded" type="text" id="taskInput" placeholder="أدخل مهمة جديدة">
+        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300" 
+                onclick="addTask()">إضافة مهمة</button>
+        <ul class="mt-4 list-disc pl-5 space-y-2" id="taskList"></ul>
+      </div>
 
     <script src="script.js"></script>
   </body>
